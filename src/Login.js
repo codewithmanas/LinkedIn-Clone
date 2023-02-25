@@ -1,3 +1,4 @@
+import linkedinLogo from "./linkedinLogo.png";
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { login } from './features/userSlice';
@@ -58,7 +59,7 @@ function Login() {
   return (
     <div className="login">
 
-        <img src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Logo.svg.original.svg" alt="login__logo" />
+        <img src={linkedinLogo} alt="login__logo" />
 
         <form>
             <input value={name} onChange={e => setName(e.target.value)} type="text" placeholder="Full name {required if registering}" />

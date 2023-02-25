@@ -1,4 +1,5 @@
 import { Avatar } from '@mui/material';
+import profileBanner from "./profileBanner.jpg";
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { selectUser } from './features/userSlice';
@@ -17,7 +18,7 @@ function Sidebar() {
   return (
     <div className="sidebar">
         <div className="sidebar__top">
-            <img src="https://images.unsplash.com/photo-1615715874955-59fca38a3515?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NDJ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60" 
+            <img src={profileBanner} 
             alt="avatar icon" />
 
             <Avatar src={user.photoUrl} className="sidebar__avatar">{user.email[0]}</Avatar>

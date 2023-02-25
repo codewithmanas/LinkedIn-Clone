@@ -9,9 +9,11 @@
 
 .login > img {
     object-fit: contain;
-    height: 70px;
+    /* height: 70px; */
     margin-top: 20px;
     margin-bottom: 20px;
+    width: 365px;
+    opacity: 0.7;
 }
 
 .login > form {
